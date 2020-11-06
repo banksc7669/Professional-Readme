@@ -31,10 +31,9 @@ function init() {
     inquirer.prompt(questions).then(function(answers){
         console.log(answers)
         let inquirerData = generator(answers)
-    writeToFile('./README.md',inquirerData)
+        writeToFile('./README.md',inquirerData)
     }).catch(function(err){
         if (err) throw err
-
     })}
 
 // function call to initialize program

@@ -4,6 +4,8 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
+
+  [Link Text](http://URL)
 `;
 }
 
