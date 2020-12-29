@@ -51,6 +51,7 @@ THEN I am taken to the corresponding section of the README
 To install necessary dependencies, run the following commands:
 
 npm init
+
 npm install inquirer
 
 ## Usage
