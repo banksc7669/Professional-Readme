@@ -12,6 +12,9 @@
   },
   "author": "Christopher Banks",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/banksc7669/Professional-Readme#installation/issues"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "inquirer": "^7.1.0",
