@@ -16,7 +16,7 @@
     "url": "https://github.com/banksc7669/Professional-Readme#installation/issues"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "inquirer": "^7.1.0",
     "util": "^0.12.3"
   }
