@@ -1,12 +1,16 @@
+const fs = require("fs");
+const util = require("util");
 const inquirer = require("inquirer");
-var generator = require("./utils/generateMarkdown");
-var fs = require("fs");
+const generateReadme = require("./utils/generateReadme")
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
-const questions = [{
-    name:"title",
+function promptUser(){
+    return inquirer.prompt([
+        {
+    name:"projectTitle",
     type:"input",
-    message:"What is the title of your project?"
+    message:"What is the project title?"
 },
 {
     name:"description",
@@ -27,7 +31,7 @@ const questions = [{
     name:"license",
     type:"input",
     message:"Select the license for the project: ",
-    selection: [
+    choices: [
         "MIT",
         "Open",
         "Mozilla",
@@ -62,28 +66,21 @@ const questions = [{
     name:"email",
     type:"input",
     message:"Please enter your email: ",
-},
-];
-
-let inquirerData;
-
-// function to write README file
-function writeToFile(fileName = './README.md', data = inquirerData) {
-    fs.writeFileSync(fileName, data, (err) => {
-    if (err) throw err;
-    console.log('The file has been saved!');
-    });
 }
-
-// function to initialize program
-function init() {
-    inquirer.prompt(questions).then(function(answers){
-        console.log(answers)
-        let inquirerData = generator(answers)
-        writeToFile('./README.md',inquirerData)
-    }).catch(function(err){
-        if (err) throw err
-    })}
-
-// function call to initialize program
-init();
+]);
+}
+// Async function 
+  async function init() {
+    try {
+       
+        const answers = await promptUser();
+        const generateContent = generateReadme(answers);
+       
+        await writeFileAsync('./dist/README.md', generateContent);
+        console.log('✔️  Successfully wrote to README.md');
+    }   catch(err) {
+        console.log(err);
+    }
+  }
+  
+  init();
