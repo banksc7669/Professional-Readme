@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/banksc7669/Professional-Readme#installation.git"
+    "url": "git+https://github.com/banksc7669/Professional-Readme.git#installation.git"
   },
   "author": "Christopher Banks",
   "license": "ISC",
@@ -19,5 +19,6 @@
     "axios": "^0.21.1",
     "inquirer": "^7.1.0",
     "util": "^0.12.3"
-  }
+  },
+  "homepage": "https://github.com/banksc7669/Professional-Readme/tree/installation.git#readme"
 }
