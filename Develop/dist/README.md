@@ -1,10 +1,10 @@
 
-<h1 align="center">afd </h1>
+<h1 align="center">Project Title </h1>
 
-https://img.shields.io/badge/license-afgd-brightgreen)<br />
+https://img.shields.io/badge/license-ISC-brightgreen)<br />
 
 ## Description
-adsf
+Create a command-line application that dynamically generates a README.md from a user's input.
 
 ## Table of Contents
 - [Description](#description)
@@ -16,26 +16,26 @@ adsf
 - [Questions](#questions)
 
 ## Installation
-adsf
+npm install inquirer
 
 ## Usage
-adsf
+Professional readme
 
 ## License
-(https://img.shields.io/badge/license-afgd-brightgreen)
+(https://img.shields.io/badge/license-ISC-brightgreen)
 <br />
-This application is covered by the afgd license. 
+This application is covered by the ISC license. 
 
 ## Contributing
-asdf
+Chris Banks
 
 ## Tests
-✏️ afaf
+✏️ npm test
 
 ## Questions
-adsf<br />
+email me<br />
 
 <br />
-:octocat: Find me on GitHub: [asdf]( https://github.com/banksc7669/asdf)<br />
+:octocat: Find me on GitHub: [githubbanksc7669]( https://github.com/banksc7669/githubbanksc7669)<br />
 <br />
-Email me with any questions: fadfa<br /><br />
+Email me with any questions: banksc7669@yahoo.com<br /><br />
