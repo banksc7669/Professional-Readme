@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "professional readme generator using node.js",
   "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +21,6 @@
     "inquirer": "^7.1.0",
     "util": "^0.12.3"
   },
-  "homepage": "https://github.com/banksc7669/Professional-Readme/tree/installation.git#readme"
+  "homepage": "https://github.com/banksc7669/Professional-Readme"
+
 }

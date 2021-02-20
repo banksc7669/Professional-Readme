@@ -44,4 +44,4 @@ Email me with any questions: ${answers.email}<br /><br />
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateReadme;
